@@ -1,0 +1,14 @@
+<body>
+    <div id="a"></div>
+    <script src="./node_modules/fraction.js/fraction.js"></script> <!-- Needed for field/ring Q -->
+    <script src="./node_modules/complex.js/complex.js"></script> <!-- Needed for field C -->
+    <script src="./node_modules/polynomial/polynomial.js"></script>
+    <script>
+
+    // Polynomial.setField("C")
+    // console.log(Polynomial("4x+3i"));
+    var p = new Polynomial("3x^2").add("-x^2");
+    console.log(p)
+    document.getElementById('a').innerHTML = p;
+    </script>  
+</body>
